@@ -1,0 +1,145 @@
+CAPÍTULO 2 – Agentes Inteligentes
+Idea central del capítulo
+
+El capítulo explica qué es un agente inteligente, cómo interactúa con su entorno, qué significa que un agente sea racional y por qué la autonomía y el aprendizaje son esenciales. Todo el capítulo se centra en el agente racional como ideal de diseño.
+
+2.1 Agentes y Entornos
+
+Definición de agente:
+Un agente es cualquier entidad que:
+
+Percibe su entorno mediante sensores.
+
+Actúa sobre su entorno mediante actuadores.
+
+Ejemplos: humanos, robots, programas de software.
+
+Percepto: Información recibida por el agente en un momento determinado.
+Secuencia de perceptos: Historial completo de percepciones.
+
+Función del agente:
+Relaciona: Secuencia de perceptos → Acción
+
+Programa del agente:
+Implementa la función del agente en software.
+
+Ejemplo: Mundo de la aspiradora
+
+Percibe suciedad en dos cuartos (A y B).
+
+Acciones: aspirar o moverse.
+
+Estrategia simple:
+
+Si hay suciedad → aspirar
+
+Si no → moverse
+
+2.2 Buen comportamiento: la racionalidad
+
+Agente racional: aquel que elige la acción que maximiza su rendimiento esperado según la información disponible.
+
+2.2.1 Medida de rendimiento
+
+Evalúa consecuencias de acciones en el entorno.
+
+Debe reflejar correctamente lo que se quiere lograr (ej. estado del suelo limpio, no cantidad de veces aspiradas).
+
+2.2.2 Factores de un agente racional
+
+Medida de rendimiento
+
+Conocimiento previo del entorno
+
+Acciones disponibles
+
+Secuencia de perceptos
+
+2.2.3 Omnisciencia, aprendizaje y autonomía
+
+Racionalidad ≠ omnisciencia
+
+El agente actúa con la información disponible
+
+Aprender es esencial para mejorar rendimiento y adaptarse
+
+Autonomía: capacidad de aprender y adaptarse más allá del comportamiento programado
+
+2.3 La naturaleza de los entornos
+2.3.1 Especificación del entorno: PEAS
+
+Performance: criterios de éxito
+
+Environment: entorno de actuación
+
+Actuators: formas de actuar
+
+Sensors: formas de percibir
+
+Ejemplo: taxi automatizado
+
+Performance: viaje seguro, rápido, cómodo, legal
+
+Entorno: carreteras, tráfico, peatones, clima
+
+Actuadores: volante, freno, acelerador, señales
+
+Sensores: cámaras, radar, GPS, micrófonos
+
+2.3.2 Propiedades de los entornos
+
+Observabilidad: totalmente observable, parcialmente observable
+
+Agentes: uno o multiagente (competitivo o cooperativo)
+
+Determinismo: determinístico, no determinístico, estocástico
+
+Secuencialidad: episódico o secuencial
+
+Dinámica: estático, dinámico, semidinámico
+
+Tipo de datos: discreto o continuo
+
+Conocimiento: conocido o desconocido por el agente
+
+Entornos más complejos: parcialmente observable + multiagente + estocástico + secuencial + dinámico + continuo + desconocido
+
+2.4 La estructura de los agentes
+Arquitectura vs. Programa
+
+Arquitectura: hardware con sensores y actuadores
+
+Programa: convierte percepciones en acciones
+
+Agente = Arquitectura + Programa
+
+Tipos de programas/agentes
+
+Agentes basados en tablas: impracticables por tamaño de memoria
+
+Agentes reflejos simples: actúan según percepto actual; rápidos pero limitados
+
+Agentes reflejos con modelo: mantienen estado interno; manejan entornos parcialmente observables
+
+Agentes basados en objetivos: planifican para lograr metas explícitas; consideran futuro
+
+Agentes basados en utilidad: maximizan función de utilidad; manejan conflictos y probabilidades
+
+Agentes que aprenden: mejoran con experiencia; usan retroalimentación y exploración
+
+Representación del mundo
+
+Atómica: estado como un todo
+
+Factorizada: conjunto de variables/atributos
+
+Estructurada: objetos y relaciones
+
+Resumen de capacidades por tipo de agente:
+
+Tipo de agente	Memoria	Modelo	Metas	Utilidad	Aprende
+Reflejo simple	❌	❌	❌	❌	❌
+Con modelo	✅	✅	❌	❌	❌
+Basado en metas	✅	✅	✅	❌	❌
+Basado en utilidad	✅	✅	✅	✅	❌
+Que aprende	✅	✅	✅	✅	✅
