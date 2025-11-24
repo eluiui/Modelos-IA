@@ -143,3 +143,105 @@ Con modelo	✅	✅	❌	❌	❌
 Basado en metas	✅	✅	✅	❌	❌
 Basado en utilidad	✅	✅	✅	✅	❌
 Que aprende	✅	✅	✅	✅	✅
+1. ¿Qué es un agente inteligente? Da ejemplos.
+Un agente inteligente es cualquier entidad que percibe su entorno mediante sensores y actúa sobre él mediante actuadores, con el objetivo de maximizar su desempeño según ciertos criterios.
+Ejemplos:
+
+Humano: ojos, oídos (sensores); manos, piernas (actuadores).
+
+Robot aspiradora: sensores de suciedad, motores para moverse y limpiar.
+
+Programa de software: entradas de datos (sensor), salidas en pantalla (actuador).
+
+2. Diferencia entre percepto y secuencia de perceptos.
+
+Percepto: Información recibida por el agente en un instante.
+
+Secuencia de perceptos: Historial completo de todas las percepciones hasta el momento, que puede influir en la acción del agente.
+
+3. ¿Qué elementos definen un agente racional?
+Un agente racional depende de cuatro factores:
+
+Medida de rendimiento (criterio objetivo de éxito).
+
+Conocimiento previo del entorno.
+
+Acciones disponibles.
+
+Secuencia de perceptos.
+
+Un agente racional elige la acción que maximiza su rendimiento esperado con la información disponible.
+
+4. Explica el modelo PEAS y da un ejemplo.
+PEAS describe el entorno de la tarea de un agente:
+
+P (Performance): cómo medir el éxito del agente.
+
+E (Environment): entorno donde actúa.
+
+A (Actuators): cómo actúa el agente.
+
+S (Sensors): cómo percibe el entorno.
+
+Ejemplo: Taxi autónomo
+
+Performance: viaje seguro, rápido y cómodo.
+
+Entorno: carreteras, tráfico, peatones.
+
+Actuadores: volante, freno, acelerador, bocina.
+
+Sensores: cámaras, radar, GPS, micrófonos.
+
+5. Clasifica los entornos según: observabilidad, determinismo y número de agentes.
+
+Observabilidad: totalmente observable (ajedrez), parcialmente observable (póker), no observable (agente que no recibe información).
+
+Determinismo: determinístico (ajedrez), no determinístico/estocástico (conducir, póker).
+
+Número de agentes: un agente (crucigrama), multiagente (tráfico, ajedrez).
+
+6. Diferencia entre agente reflejo simple y agente con modelo.
+
+Reflejo simple: actúa únicamente según el percepto actual, usando reglas “Si X → Y”. No tiene memoria ni conocimiento del estado del mundo.
+
+Con modelo: mantiene un estado interno que representa el mundo, usando un modelo de transición y de sensores, lo que le permite actuar correctamente en entornos parcialmente observables.
+
+7. ¿Qué ventajas tienen los agentes basados en metas frente a los reflejos?
+
+Consideran no solo el estado actual sino también objetivos futuros.
+
+Pueden planificar acciones para alcanzar metas específicas.
+
+Son más flexibles y adaptables a cambios en el entorno.
+
+Separan conocimiento de acción, permitiendo decisiones más inteligentes.
+
+8. ¿Qué es un agente basado en utilidad y por qué es más realista?
+Un agente basado en utilidad no solo busca cumplir un objetivo, sino maximizar una función de utilidad que evalúa qué tan bueno es un estado y permite comparar distintos resultados.
+Por qué es más realista:
+
+Puede manejar conflictos (rapidez vs seguridad).
+
+Considera incertidumbre y consecuencias probabilísticas.
+
+Evalúa alternativas según su valor esperado, no solo si cumple la meta.
+
+9. Explica cómo funciona un agente que aprende y sus componentes.
+Un agente que aprende mejora su rendimiento con la experiencia mediante retroalimentación del entorno. Componentes:
+
+Elemento de desempeño: decide las acciones.
+
+Elemento de aprendizaje: ajusta el comportamiento según la experiencia.
+
+Generador de problemas: propone exploración y nuevas acciones.
+
+Elemento crítico de retroalimentación: evalúa resultados y recompensas/castigos.
+
+10. Da ejemplos de representación atómica, factorizada y estructurada del mundo.
+
+Atómica: estado visto como un todo sin partes (ej. posición del agente en un tablero de ajedrez).
+
+Factorizada: estado como conjunto de variables (ej. gasolina, velocidad, clima de un vehículo).
+
+Estructurada: estado como objetos y relaciones (ej. “Un camión bloquea a una vaca en el camino”).
